@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>GTT Alert/Notification Application</title>
+
+    <link th:rel="stylesheet" th:href="@{assets/bootstrap-datepicker/css/bootstrap-datepicker.css}"/>
+    <link th:rel="stylesheet" th:href="@{assets/bootstrap-datepicker/css/bootstrap-datepicker.standalone.css}"/>
+    <link th:rel="stylesheet" th:href="@{webjars/bootstrap/4.0.0-2/css/bootstrap.min.css} "/>
+    <link th:rel="stylesheet" th:href="@{webjars/font-awesome/5.11.2/css/all.css} "/>
+<style>
+table {
+  border: 2px solid #0066ff;
+  font-size:22px;
+  background-color: #40066ff;
+  text-align:center;
+  table-layout: auto;
+  width: 65%; 
+}
+th {
+  border: 2px solid #004477;
+  font-size:19px;
+  background-color: #0276b3;
+  color:#ffffff;
+  text-align:center;
+  padding: 10px;
+}
+td {
+  border: 2px solid #0276b3;
+  font-size:25px;
+  text-align:center;
+  padding: 4px;
+}
+
+table.center {
+  margin-left:auto; 
+  margin-right:auto;
+}
+
+p.ex1 {
+  margin-top: 100px;
+}
+
+tr:hover {background-color: #4caf50; color: #ffffff}
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+    	<a class="navbar-brand" href="/">GTT Notifications / Alerts Application</a>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<p class="ex1"></p>
+<p class="ex1"></p>
+<p class="ex1"></p>
+<p class="ex1"></p>
+<p class="ex1"></p>
+<p style="color:blue;font-size:40px" align= "center" ><u>GOLBAL TRACK AND TRACE - NOTIFICATIONS</u></p>
+<div class="container">
+ <table class="center" >
+	 <tr>
+	 	<th>GTT Notification Links&nbsp;&nbsp;&nbsp;&nbsp;</th>
+        <th>GTT Email Links&nbsp;&nbsp;&nbsp;&nbsp;</th>
+	 </tr>
+	 <tr>
+	 	<td><a href="gttJobStatus">Job Status</a></td>
+	 	<td><a href="gttJobStatusEmail">Job Status - Email</a></td>
+	 </tr>
+     <tr>
+	 	<td><a href="gttOrderTPStatus">Order-TP Status</a></td>
+	 	<td><a href="gttOrderTPStatusEmail">Order-TP - Email</a></td>
+	 </tr>
+     <tr>
+	 	<td><a href="datepage?pagename=tpconsonsrepo">TP Date to Date Report</a></td>
+	 	<td><a href="routeplan98Email">TP Date to Date Report</a></td>
+	 </tr> 
+	 
+	 <tr>
+	 	<td><a href="routeplan98forCurrentDate">TP Consolidate Report</a></td>
+	 	<td><a href="">TP Consolidate Report - Email</a></td>
+	 </tr> 
+     <tr>
+	 	<td><a href="tablesizes">Database Sizes</a></td>
+	 	<td><a href="tablesizesEMail">Database Sizes - Email</a></td>
+	 </tr> 
+	 <tr>
+	 	<td><a href="#">Order Chart</a></td>
+        <td><a href="datepage?pagename=tpchart">TP Chart</a></td>
+	 </tr>
+ </table>
+</div>
+<script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+<script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+<script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+<script th:src="@{assets/bootstrap-datepicker/js/bootstrap-datepicker.js}"></script>
+
+</body>
+</html>
